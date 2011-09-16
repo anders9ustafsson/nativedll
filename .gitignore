@@ -1,0 +1,16 @@
+
+*.dotCover
+*.user
+*.opensdf
+*.sdf
+*.suo
+_ReSharper.NativeDll/
+Debug/
+ipch/
+NativeDllInvoker.Web/bin/
+NativeDllInvoker.Web/ClientBin/
+NativeDllInvoker.Web/obj/
+NativeDllInvoker/Bin/
+NativeDllInvoker/obj/
+NativeDllInvoker/Assets/NativeDll.dll
+Release/

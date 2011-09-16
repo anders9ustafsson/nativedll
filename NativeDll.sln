@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeDll", "NativeDll\NativeDll.vcxproj", "{A8A73778-F75A-48D3-9295-0F8AC03B2319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeDllInvoker", "NativeDllInvoker\NativeDllInvoker.csproj", "{4F894177-563A-4E97-8302-C96FC6FC95B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319} = {A8A73778-F75A-48D3-9295-0F8AC03B2319}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeDllInvoker.Web", "NativeDllInvoker.Web\NativeDllInvoker.Web.csproj", "{1F428D20-480A-4000-A087-1F434FAD8012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Debug|Win32.Build.0 = Debug|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Release|Win32.ActiveCfg = Release|Win32
+		{A8A73778-F75A-48D3-9295-0F8AC03B2319}.Release|Win32.Build.0 = Release|Win32
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4F894177-563A-4E97-8302-C96FC6FC95B2}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1F428D20-480A-4000-A087-1F434FAD8012}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
