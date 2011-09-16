@@ -1,0 +1,5 @@
+= NativeDll
+
+Silverlight 5 (RC) support for P/Invoke.
+NativeDllInvoker/NativeDllHelper.cs is a static C# utility class for setting up a local directory of native 3rd party DLL:s, copied from the application resources. 
+Directory is added to system path during application execution, enabling sufficient access to the native 3rd party DLL:s via P/Invoke.
