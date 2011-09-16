@@ -9,6 +9,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Windows;
 using System.Windows.Resources;
 
 namespace Cureos.Utility
@@ -33,9 +34,8 @@ namespace Cureos.Utility
         /// <summary>
         /// Setup native DLL directory and include it in system path, then add specified resource DLLs to directory
         /// </summary>
-        /// <param name="getResourceStreamCallback">Callback to function for obtaining a stream from the assembly resources</param>
         /// <param name="dllPaths">Relative file paths to the DLL resources in the application project</param>
-        public static void SetupNativeDllFolder(Func<Uri, StreamResourceInfo> getResourceStreamCallback, params string[] dllPaths)
+        public static void SetupNativeDllFolder(params string[] dllPaths)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace Cureos.Utility
             {
                 try
                 {
-                    var resourceStream = getResourceStreamCallback(GetResourceUri(dllPath));
+                    var resourceStream = Application.GetResourceStream(GetResourceUri(dllPath));
                     CopyDllToNativeDirectory(resourceStream, dllPath);
                 }
                 catch (NullReferenceException)

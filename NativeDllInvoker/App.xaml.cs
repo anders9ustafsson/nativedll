@@ -24,7 +24,7 @@ namespace NativeDllInvoker
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            NativeDllHelper.SetupNativeDllFolder(GetResourceStream, "Assets/NativeDll.dll");
+            NativeDllHelper.SetupNativeDllFolder("Assets/NativeDll.dll");
 
             RootVisual = new MainPage();
         }
