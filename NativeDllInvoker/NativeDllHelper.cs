@@ -5,6 +5,7 @@
 // http://www.eclipse.org/legal/epl-v10.html
 
 using System;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -25,7 +26,7 @@ namespace Cureos.Utility
         /// </summary>
         static NativeDllHelper()
         {
-            _nativeDllDirectory = String.Format(@"{0}{1}Silverlight{1}Native",
+            _nativeDllDirectory = String.Format(CultureInfo.InvariantCulture, @"{0}{1}Silverlight{1}Native",
                                                 Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
                                                 Path.DirectorySeparatorChar);
             _executingAssembly = new AssemblyName(Assembly.GetExecutingAssembly().FullName).Name;
@@ -81,8 +82,11 @@ namespace Cureos.Utility
         /// <returns>URI to the resource file in the executing assembly</returns>
         private static Uri GetResourceUri(string fileName)
         {
-            return new Uri(String.Format("/{0};component/{1}", _executingAssembly, fileName.TrimStart('/')),
-                           UriKind.Relative);
+            return
+                new Uri(
+                    String.Format(CultureInfo.InvariantCulture, "/{0};component/{1}", _executingAssembly,
+                                  fileName.TrimStart('/')),
+                    UriKind.Relative);
         }
 
         /// <summary>
@@ -96,7 +100,7 @@ namespace Cureos.Utility
             using (
                 var fileStream =
                     new FileStream(
-                        String.Format("{0}{1}{2}", _nativeDllDirectory, Path.DirectorySeparatorChar,
+                        String.Format(CultureInfo.InvariantCulture, "{0}{1}{2}", _nativeDllDirectory, Path.DirectorySeparatorChar,
                                       Path.GetFileName(fileName)), FileMode.Create))
             {
                 resourceInfo.Stream.CopyTo(fileStream);
